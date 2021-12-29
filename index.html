@@ -20,82 +20,90 @@
     
     <header>
         
- <div class="container-1 main-nav line">
-<a href="" class="link"><span class="accent">Web</span>Studio</a>
+ <div class="container-one">
+<a href="" class="container-one__link"><span class="container-one__accent">Web</span>Studio</a>
     <nav>
         <ul class="site-nav list">
-        <li class="item"><a href=""class="forces current">Студия</a></li>
-        <li class="item"><a href="./portfolio.html" class="forces">Портфолио</a></li>
-        <li class="item"><a href="" class="forces">Контакты</a></li>
+        <li class="site-nav__item"><a href=""class="site-nav__forces site-nav__current">Студия</a></li>
+        
+        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__forces">Портфолио</a></li>
+        <li class="site-nav__item"><a href="" class="site-nav__forces">Контакты</a></li>
         </ul>
         </nav>
        <ul class="contacts-list ">
-        <li class="info"><a href="mailto:info@devstudio.com" class="forces">
-            <svg class="icon-contacts">
+        <li class="contacts-list__info"><a href="mailto:info@devstudio.com" class="contacts-list__forces">
+            <svg class="contacts-list__icon">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a></li>
             
-            <li class="info"><a href="tel:+380961111111" class="forces">
-            <svg class="icon-contacts">
+            <li class="contacts-list__info"><a href="tel:+380961111111" class="contacts-list__forces">
+            <svg class="contacts-list__icon">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
+</header>
 
-
-
-        </header>
-                <main>
-<div class="team">
-                    <section class="hero">
-                    <div class="container-button">
-                    <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА<br /></h1>
-                    <button type="button" class="button primary color" data-modal-open>Заказать услугу</button>
-                    </div>
-                </section>
-            </div>
-                <section class="section-one">
-                    <div class="container">
+<main>
+    <div class="team">
+     <section class="hero">
+     <div class="container-button">
+    <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА<br /></h1>
+    <button type="button" class="button primary color" data-modal-open>Заказать услугу</button>
+    </div>
+    </section>
+    </div>
+    
+    
+    <section class="section-one">
+    <div class="container">
                     <!--<h2></h2>-->
-                 <ul class="feature-list"> 
-                     <li class="item">
-                         <div class="icon">
-                         <svg class="icon-feature">
+                 <ul class="feature"> 
+                     <li class="feature__item">
+                         <div class="feature__icon-list">
+                         <svg class="feature__icon">
                              <use href="./images/symbol-defs.svg#icon-antenna-1"></use></svg>
                          </div>
 
-                            <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                            <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                            <h3 class="feature__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                            <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
-                        <li class="item">
-                            <div class="icon">
-                                <svg class="icon-feature">
+
+                        <li class="feature__item">
+                            <div class="feature__icon-list">
+                                <svg class="feature__icon">
                                     <use href="./images/symbol-defs.svg#icon-clock-1"></use>
                                 </svg>
                             </div>
-                            <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
-                            <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                            <h3 class="feature__title">ПУНКТУАЛЬНОСТЬ</h3>
+                            <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
-                        <li class="item">
-                            <div class="icon">
-                                <svg class="icon-feature">
+                        
+                        <li class="feature__item">
+                            <div class="feature__icon-list">
+                                <svg class="feature__icon">
                                     <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
                                 </svg>
                             </div>
-                            <h3 class="title">ПЛАНИРОВАНИЕ</h3>
-                            <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                            <h3 class="feature__title">ПЛАНИРОВАНИЕ</h3>
+                            <p class="feature__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
-                        <li class="item">
-                            <div class="icon">
-                                <svg class="icon-feature">
+                       
+                        <li class="feature__item">
+                            <div class="feature__icon-list">
+                                <svg class="feature__icon">
                                     <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
                                 </svg>
                             </div>
-                            <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                            <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                            <h3 class="feature__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                            <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
                     </ul>
                     </div>
                 </section>
+                
+                
+                
+                
                 <section class="section-two">
                     <div class="container">
                 <h3 class="section-title">Чем мы занимаемся</h3>
@@ -117,6 +125,8 @@
             </ul></div>
                 </div>
                 </section>
+               
+               
                 <section class="section-three">
                     <div class="container">
                     <h2 class="section-title">Наша команда</h2>

@@ -27,17 +27,24 @@ body {
 /*фон 2 #2F303A*/
 /*фон 3 #F5F4FA*/
 /*фон 4 #2F303A*/
-.container-1 {
+
+
+/*header*/
+
+.container-one {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
+
 
 header {
   border-bottom: 1px solid #ececec;
 }
-.link {
+.container-one__link {
   color: var(--main-text-color);
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -47,34 +54,33 @@ header {
   font-style: normal;
 }
 
-.accent {
+.container-one__accent {
   color: var(--text-accent-color);
 }
+
+
+/*site nav*/
+
 .list,
 li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/*site nav*/
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
 .site-nav {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .item {
+.site-nav__item {
   margin-right: 50px;
 }
 
-.site-nav .item:not (:last-child) {
+.site-nav__item:not (:last-child) {
   margin-right: 0px;
 }
-.site-nav .forces {
+.site-nav__forces {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -88,16 +94,16 @@ li {
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .forces:hover,
-.site-nav .forces:focus {
+.site-nav__forces:hover,
+.site-nav__forces:focus {
   color: var(--text-accent-color);
 }
 
-.site-nav .forces.current {
+.site-nav__forces.site-nav__current {
   color: var(--text-accent-color);
 }
 
-.forces.current::after {
+.site-nav__forces.site-nav__current::after {
   content: "";
   width: 48px;
   height: 4px;
@@ -105,11 +111,14 @@ li {
   display: block;
   transform: translateY(35px);
 }
+/*Портфоліо*/
 .forces.current.underlining::after {
   content: "";
   width: 78px;
   height: 4px;
 }
+/**/
+
 .contacts-list {
   margin: 0;
   margin-left: auto;
@@ -120,11 +129,9 @@ li {
   justify-content: center;
 }
 
-.contacts-list .item + .item {
-  margin-left: 50px;
-}
 
-.contacts-list .forces {
+
+.contacts-list__info .contacts-list__forces {
   color: var(--secondary-color-of-the-text);
   font-weight: 500;
   font-size: 14px;
@@ -136,24 +143,25 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-contacts {
+.contacts-list__icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: #757575;
 }
 
-.forces:hover .icon-contacts,
-.forces:focus .icon-contacts {
+
+.contacts-list__forces:hover .contacts-list__icon,
+.contacts-list__forces:focus .contacts-list__icon {
   fill: var(--text-accent-color);
 }
 
-.info .forces:hover,
-.info .forces:focus {
+.contacts-list__info .contacts-list__forces:hover,
+.contacts-list__info .contacts-list__forces:focus {
   color: var(--text-accent-color);
 }
 
-.info {
+.contacts-list__info {
   padding-right: 30px;
 }
 
@@ -181,9 +189,9 @@ li {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+   to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
     ),
     url(../images/img3.jpg);
   background-color: #c4c4c4;
@@ -363,7 +371,7 @@ img {
 
 /*Rectangle */
 
-.feature-list {
+.feature {
   display: flex;
   flex-wrap: nowrap;
   margin: 0;
@@ -371,13 +379,13 @@ img {
   padding: 0px;
 }
 
-.feature-list .item {
+.feature__item {
   margin-left: 30px;
   flex-basis: calc(100 % / 4);
   width: 270px;
 }
 
-.feature-list .title {
+.feature__title {
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -387,13 +395,13 @@ img {
   padding-top: 30px;
 }
 
-.feature-list .text {
+.feature__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.icon {
+.feature__icon-list {
   padding: 0px;
   border: none;
   display: flex;
@@ -403,19 +411,19 @@ img {
   height: 120px;
 }
 
-.icon-feature {
+.feature .feature__icon{
   width: 70px;
   height: 70px;
 }
+/**/
+
+
 /*section*/
 .section-one {
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.section-two {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
+
 
 .section {
   padding-bottom: 94px;
@@ -430,6 +438,13 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: #f5f4fa;
+}
+
+/*section-two*/
+
+.section-two {
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .section-title {
