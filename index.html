@@ -21,23 +21,23 @@
     <header>
         
  <div class="container-one">
-<a href="" class="container-one__link"><span class=" container-one__link container-one__link--accent">Web</span>Studio</a>
+<a href="" class="container-one__item"><span class=" container-one__link container-one__link--accent">Web</span>Studio</a>
     <nav>
         <ul class="site-nav list">
-        <li class="site-nav__item"><a href=""class="site-nav__item site-nav__item--forces site-nav__item--current">Студия</a></li>
+        <li class="site-nav__item"><a href=""class="site-nav__link  site-nav__link--current">Студия</a></li>
         
-        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__item site-nav__item--forces">Портфолио</a></li>
-        <li class="site-nav__item"><a href="" class="site-nav__item site-nav__item--forces">Контакты</a></li>
+        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
         </ul>
         </nav>
-       <ul class="contacts-list ">
-        <li class="contacts-list__info"><a href="mailto:info@devstudio.com" class="contacts-list__info contacts-list__info--forces">
-            <svg class="contacts-list__icon">
+       <ul class="contacts">
+        <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
+            <svg class="contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a></li>
             
-            <li class="contacts-list__info"><a href="tel:+380961111111" class="contacts-list__info contacts-list__info--forces">
-            <svg class="contacts-list__icon">
+            <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
+            <svg class="contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
@@ -47,7 +47,7 @@
     <div class="team">
      <section class="hero">
      <div class="hero__container-button">
-    <h1 class="hero__hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА<br /></h1>
+    <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА<br /></h1>
     <button type="button" class="hero__button hero__button--primary hero__button--color" data-modal-open>Заказать услугу</button>
     </div>
     </section>
@@ -282,11 +282,10 @@
 <footer class="footer">
     <div class="container footer-container">
         <div class="basement">
-        <a href="" class="container__link"><span class="container__link--accent">Web</span>
-            <span class="container__studio">Studio</span></a>
+        <a href="" class="basement__item"><span class=" basement__link basement__link--accent">Web</span><span class="basement__studio">Studio</span></a>
     <address class="address">
-        <ul class="address__address-list">
-        <li><a class="address__address-link" href="https://goo.gl/maps/1u3zxF8ceBxTiurs7" target="blanc" rel="norefferer noopener" class="address__address-list--forces">г. Киев,
+        <ul class="address__list">
+        <li><a class="address__link" href="https://goo.gl/maps/1u3zxF8ceBxTiurs7" target="blanc" rel="norefferer noopener" >г. Киев,
             пр-т Леси Украинки, 26</a></li>  
         <li class="address__information"><a href="mailto:info@devstudio.com" class="address__content">info@devstudio.com</a></li>
         <li class="address__information"><a href="tel:+380961111111" class="address__content">+38 096 111 11 11</a></li>
@@ -343,72 +342,65 @@
  
     <!-- Modal -->
 
-<div class="backdrop is-hidden" data-modal> 
+<div class="backdrop backdrop--is-hidden" data-modal> 
   <div class="modal">
-      <form class="form-contant">
-          <p class="user-data">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="name-text">
-          <label class="names" for="user_name">Имя</label>
-            <input class="frame" type="name" name="name" id="user_name" />
-        <svg class="icon-sign">
+      <form class="modal__form-contant">
+          <p class="modal__user-data">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal__name-text">
+          <label class="modal__names" for="user_name">Имя</label>
+            <input class="modal__frame" type="name" name="name" id="user_name" />
+        <svg class="modal__icon-sign">
             <use href="images/symbol-defs.svg#icon-person-black-18dp-1"></use>
         </svg>
         
         </div>
 
-        <div class="name-text">
-        <label class="names" for="user_phone">Телефон</label>
-        <input class="frame" type="tel" name="phone_number" id="user_phone" />
-        <svg class="icon-sign">
+        <div class="modal__name-text">
+        <label class="modal__names" for="user_phone">Телефон</label>
+        <input class="modal__frame" type="tel" name="phone_number" id="user_phone" />
+        <svg class="modal__icon-sign">
             <use href="images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
         </svg>
     </div>
 
-        <div class="name-text">
-        <label class="names" for="user_email">Почта</label>
-        <input class="frame" type="email" name="email" id="user_email" />
-        <svg class="icon-sign">
+        <div class="modal__name-text">
+        <label class="modal__names" for="user_email">Почта</label>
+        <input class="modal__frame" type="email" name="email" id="user_email" />
+        <svg class="modal__icon-sign">
             <use href="images/symbol-defs.svg#icon-email-black-18dp-1"></use>
         </svg>
     </div>
 
-        <div class="name-text">
-        <label  class="names" for="user_feedback">Комментарий</label>
-        <textarea class="feedback" name="feedback"  id="feedback" rows="5" placeholder="Введите текст"></textarea>
+        <div class="modal__name-text">
+        <label  class="modal__names" for="user_feedback">Комментарий</label>
+        <textarea class="modal__feedback" name="feedback"  id="feedback" rows="5" placeholder="Введите текст"></textarea>
         </div>
         
         
-        <div class="checkbox-one">
-    <label class="mailing-list">
-        <input class="conditions" type="checkbox" name="Соглашаюсь с рассылкой и принимаю Условия договора"
+        <div class="modal__checkbox-one">
+    <label class="modal__mailing-list">
+        <input class="modal__conditions" type="checkbox" name="Соглашаюсь с рассылкой и принимаю Условия договора"
             id="Соглашаюсь с рассылкой и принимаю Условия договора">
-        <svg class="icon-box">
+        <svg class="modal__icon-box">
             <use href="images/symbol-defs.svg#icon-Vector-2"></use>
         </svg>
         Соглашаюсь с рассылкой и принимаю
-        <a href="" class="condition-one">Условия договора</a>
+        <a href="" class="modal__condition-one">Условия договора</a>
         </label>
 </div>
         
         
-        <button class="button-box" type="submit">Отправить</button>
+        <button class="modal__button-box" type="submit">Отправить</button>
      
     
     </form>
-<button type="button" class="modal-button" data-modal-close>
-<svg class="icon-button">
+<button type="button" class="modal__modal-button" data-modal-close>
+<svg class="modal__icon-button">
     <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
 </svg>
 </button>
 </div>
 </div>
-
-
-
-
-
-
-
 <script src="./js/modal.js"></script>
 </body>
 </html>
