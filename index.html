@@ -18,10 +18,10 @@
 
 <body>
     
-    <header>
+    <header class="header">
         
- <div class="container-one">
-<a href="" class="container-one__item"><span class=" container-one__link container-one__link--accent">Web</span>Studio</a>
+ <div class="container container__header">
+<a href="" class="container__item"><span class=" container__link container__link--accent">Web</span>Studio</a>
     <nav>
         <ul class="site-nav list">
         <li class="site-nav__item"><a href=""class="site-nav__link  site-nav__link--current">Студия</a></li>
@@ -44,17 +44,16 @@
 </header>
 
 <main>
-    <div class="team">
      <section class="hero">
-     <div class="hero__container-button">
+     <div class="container">
     <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА<br /></h1>
-    <button type="button" class="hero__button hero__button--primary hero__button--color" data-modal-open>Заказать услугу</button>
+    <button type="button" class=" hero__button hero__button--primary" data-modal-open>Заказать услугу</button>
     </div>
     </section>
-    </div>
     
     
-    <section class="section-one">
+    
+    <section class="section section--bottom">
     <div class="container">
                     <!--<h2></h2>-->
                  <ul class="feature"> 
@@ -104,7 +103,7 @@
                 
                 
                 
-                <section class="section-two">
+                <section class="section section--top">
                     <div class="container">
                 <h3 class="section__title">Чем мы занимаемся</h3>
                 
@@ -127,7 +126,7 @@
                 </section>
                
                
-                <section class="section-three">
+                <section class="section section--other-background">
                     <div class="container">
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="command">
@@ -236,7 +235,7 @@
 
 
             <section class="section">
-                <div class="container our-team">
+                <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 
                 <ul class="regular-customers">
@@ -280,7 +279,7 @@
         </main>
 
 <footer class="footer">
-    <div class="container footer-container">
+    <div class="container container__footer">
         <div class="basement">
         <a href="" class="basement__item"><span class=" basement__link basement__link--accent">Web</span><span class="basement__studio">Studio</span></a>
     <address class="address">
@@ -342,7 +341,7 @@
  
     <!-- Modal -->
 
-<div class="backdrop backdrop--is-hidden" data-modal> 
+<div class="backdrop is-hidden" data-modal> 
   <div class="modal">
       <form class="modal__form-contant">
           <p class="modal__user-data">Оставьте свои данные, мы вам перезвоним</p>
