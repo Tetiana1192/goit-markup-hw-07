@@ -1,0 +1,22 @@
+.site-nav__item:not (:last-child) {
+  margin-right: 0px;
+}
+
+.annexes li:not(:last-child) {
+  margin-right: 30px;
+}
+.command__specialists:not(:last-child) {
+  margin-right: 30px;
+}
+
+.command__border:not(:last-child) {
+  margin-right: 10px;
+}
+
+.regular-customers__emblem:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__icon-clients:not(:last-child) {
+  margin-right: 10px;
+}

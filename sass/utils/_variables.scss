@@ -1,0 +1,29 @@
+:root {
+  --main-title-color: #ffffff;
+  --main-text-color: #212121;
+  --secondary-color-of-the-text: #757575;
+  --text-accent-color: #2196f3;
+  --button-color: #f5f4fa;
+  --text-white-transparent: rgba(255, 255, 255, 0.6);
+  --header-background: #2f303a;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-title-color);
+  color: var(--secondary-color-of-the-text);
+  font-family: Roboto, sans-serif;
+}
+/*заголовок #FFFFFF*/
+/*колір основновного текста #212121 */
+/*вториний колір тексту #757575*/
+/*акцент текста #2196F3*/
+
+/*фон 1 #FFFFFF*/
+/*фон 2 #2F303A*/
+/*фон 3 #F5F4FA*/
+/*фон 4 #2F303A*/

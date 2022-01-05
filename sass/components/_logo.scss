@@ -1,0 +1,33 @@
+.container__item {
+  color: var(--main-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  font-style: normal;
+  margin-right: 93px;
+}
+
+.container__link--accent {
+  color: var(--text-accent-color);
+}
+
+.basement__studio {
+  color: var(--main-title-color);
+}
+
+.basement__link--accent {
+  color: var(--text-accent-color);
+}
+
+.basement__item {
+  color: var(--main-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
