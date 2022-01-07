@@ -1,0 +1,56 @@
+.buttons__item {
+  border-radius: 4px;
+  color: var(--main-title-color);
+  background-color: var(--text-accent-color);
+  cursor: pointer;
+  font-family: Roboto;
+  padding: 10px 32px;
+  min-width: 73px;
+  text-align: center;
+  border: 1px solid var(--text-white-transparent);
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--text-accent-color);
+    color: var(--button-color);
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.buttons__item--secondary {
+  background-color: var(--button-color);
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  font-family: Roboto;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+
+.buttons__item--primary {
+  background-color: var(--button-color);
+  color: var(--main-text-color);
+}

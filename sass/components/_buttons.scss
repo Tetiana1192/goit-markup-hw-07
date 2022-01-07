@@ -17,9 +17,8 @@
   transition-duration: 250ms;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  .hero__button.hero__button--primary {
-    background-color: var(--text-accent-color);
-    color: var(--main-title-color);
-  }
+}
+.hero__button.hero__button--primary {
+  background-color: var(--text-accent-color);
+  color: var(--main-title-color);
 }

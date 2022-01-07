@@ -23,18 +23,18 @@
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
-
-  .command__icon-border {
-    display: flex;
-    padding-left: 0px;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
+.command__icon-border {
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .command__border {
   width: 44px;
   height: 44px;
