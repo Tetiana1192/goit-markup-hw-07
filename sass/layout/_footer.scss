@@ -3,13 +3,13 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.container__footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-}
 
+  .container__footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+}
 .address {
   margin-top: 20px;
 }
@@ -27,8 +27,12 @@
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
-}
 
+  &:hover,
+  &:focus {
+    color: var(--text-accent-color);
+  }
+}
 .address__link {
   color: var(--main-title-color);
   font-weight: 400;
@@ -37,9 +41,4 @@
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
-}
-
-.address__content:hover,
-.address__content:focus {
-  color: var(--text-accent-color);
 }

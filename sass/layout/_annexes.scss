@@ -1,16 +1,20 @@
-.annexes__technology {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 .annexes {
   display: flex;
   flex-wrap: nowrap;
   padding: 0;
   margin: 0px;
-}
-.annexes li {
-  flex-wrap: nowrap;
+
+  .annexes__technology {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .annexes li {
+    flex-wrap: nowrap;
+  }
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
